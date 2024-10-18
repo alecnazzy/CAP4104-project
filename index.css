@@ -6,24 +6,105 @@ body {
 
 body {
   color: black;
-  background-color: white;
+  background-color: rgb(147, 238, 177);
+  margin: 0%;
 }
 
-html {
-  display: table;
-  margin: auto;
-}
 /* END HTML BODY */
 
 /* NAVBAR */
 .navbar {
-  color: black;
-  background-color: white;
+  background-color: rgb(147, 238, 177);
   font-size: x-large;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2cm solid rgb(134, 232, 167);
+}
+.navbar:hover {
+  font-size: x-large;
+  width: 100%;
+  text-align: center;
 }
 .navbar a {
-  color: black;
+  color: white;
+  color: rgb(85, 194, 139);
   text-decoration: none;
   padding-right: 40px;
 }
+.navbar a:hover {
+  color: rgb(147, 238, 177);
+  color: white;
+}
 /* END NAVBAR*/
+
+/* INDEX */
+.index-desc {
+  background-color: rgb(85, 194, 139);
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 50px;
+  border-radius: 10px;
+}
+.index-h1 {
+  color: rgb(85, 194, 139);
+  font-size: 75px;
+  text-align: center;
+  max-width: 50%;
+  margin: 20px auto;
+}
+/* END INDEX */
+
+/* PERSONA */
+.persona-bio {
+  background-color: rgb(85, 194, 139);
+  color: white;
+  font-size: large;
+  text-align: center;
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.persona-bio ul {
+  display: inline-block;
+  list-style-position: inside;
+}
+
+.persona-story {
+  background-color: rgb(85, 194, 139);
+  color: white;
+  font-size: large;
+  text-align: center;
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.persona-story h1 {
+  text-decoration: underline;
+}
+
+.persona-story ul {
+  text-align: start;
+  display: inline-block;
+  list-style-position: inside;
+  margin: 0px;
+  font-size: large;
+}
+/* END PERSONA */
+
+/* MOODBOARD */
+.moodboard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.moodboard img {
+  text-align: center;
+}
+/* END MOODBOARD */
