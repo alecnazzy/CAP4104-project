@@ -18,7 +18,7 @@ body {
   font-size: x-large;
   width: 100%;
   text-align: center;
-  border-bottom: 2cm solid rgb(134, 232, 167);
+  border-bottom: 2px solid rgb(134, 232, 167);
 }
 .navbar:hover {
   font-size: x-large;
