@@ -5,20 +5,21 @@ body {
 }
 
 body {
-  color: black;
-  background-color: rgb(147, 238, 177);
+  background-color: rgb(11, 71, 64);
   margin: 0%;
 }
 
 h1 {
-  color: rgb(76, 179, 128);
+  color: white;
+  color: rgb(88, 252, 197);
   font-size: 75px;
   text-align: center;
   max-width: 50%;
   margin: 20px auto;
 }
 h4 {
-  color: rgb(76, 179, 128);
+  color: white;
+  color: rgb(88, 252, 197);
   font-size: 25px;
   text-align: center;
   max-width: 50%;
@@ -29,11 +30,11 @@ h4 {
 
 /* NAVBAR */
 .navbar {
-  background-color: rgb(147, 238, 177);
+  background-color: rgb(11, 63, 71);
+  background-color: rgb(11, 71, 64);
   font-size: x-large;
   width: 100%;
   text-align: center;
-  border-bottom: 2px solid rgb(134, 232, 167);
 }
 .navbar:hover {
   font-size: x-large;
@@ -42,40 +43,34 @@ h4 {
 }
 .navbar a {
   color: white;
-  color: rgb(76, 179, 128);
+  color: rgb(88, 252, 197);
   text-decoration: none;
   padding-right: 40px;
 }
 .navbar a:hover {
-  color: rgb(147, 238, 177);
+  color: rgb(88, 252, 197);
   color: white;
 }
 /* END NAVBAR*/
 
 /* INDEX */
 .index-desc {
-  background-color: rgb(76, 179, 128);
   color: white;
   font-size: x-large;
   text-align: center;
   max-width: 50%;
   margin: 20px auto;
-  padding: 50px;
-  border-radius: 10px;
 }
 
 /* END INDEX */
 
 /* PERSONA */
 .persona-bio {
-  background-color: rgb(85, 194, 139);
   color: white;
   font-size: large;
   text-align: center;
   max-width: 50%;
   margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
 }
 
 .persona-bio ul {
@@ -84,14 +79,12 @@ h4 {
 }
 
 .persona-story {
-  background-color: rgb(76, 179, 128);
   color: white;
   font-size: large;
   text-align: center;
   max-width: 50%;
   margin: 20px auto;
   padding: 20px;
-  border-radius: 10px;
 }
 
 .persona-story h1 {
@@ -109,14 +102,11 @@ h4 {
 
 /* SCENARIO */
 .scenario {
-  background-color: rgb(76, 179, 128);
   color: white;
-  font-size: large;
+  font-size: x-large;
   text-align: center;
   max-width: 50%;
   margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
 }
 /* END SCENARIO */
 
