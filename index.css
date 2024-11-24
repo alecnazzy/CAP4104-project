@@ -10,16 +10,14 @@ body {
 }
 
 h1 {
-  color: white;
-  color: rgb(88, 252, 197);
+  color: rgb(224, 210, 3);
   font-size: 75px;
   text-align: center;
   max-width: 50%;
   margin: 20px auto;
 }
 h4 {
-  color: white;
-  color: rgb(88, 252, 197);
+  color: rgb(224, 210, 3);
   font-size: 25px;
   text-align: center;
   max-width: 50%;
@@ -30,25 +28,19 @@ h4 {
 
 /* NAVBAR */
 .navbar {
-  background-color: rgb(11, 63, 71);
   background-color: rgb(11, 71, 64);
-  font-size: x-large;
+  font-size: large;
   width: 100%;
   text-align: center;
+  height: 30px;
 }
-.navbar:hover {
-  font-size: x-large;
-  width: 100%;
-  text-align: center;
-}
+
 .navbar a {
-  color: white;
-  color: rgb(88, 252, 197);
+  color: rgb(224, 210, 3);
   text-decoration: none;
   padding-right: 40px;
 }
 .navbar a:hover {
-  color: rgb(88, 252, 197);
   color: white;
 }
 /* END NAVBAR*/
