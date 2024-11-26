@@ -7,13 +7,47 @@
     <link rel="stylesheet" href="prototype.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
-      <a href="/html/prototype/prototype.html">
-        <img src="/images/icon_light.png" alt="" />
+      <a href="/html/prototype/prototype.html" class="logo">
+        <img src="/images/icon_light.png" alt="Logo" />
       </a>
-      <a href="">Stores</a>
-      <a href="/html/prototype/cart.html">Cart</a>
+      <a href="" class="nav-link">Stores</a>
+      <input type="text" class="search-bar" placeholder="Search..." />
+      <a href="/html/prototype/cart.html" class="nav-link">Cart</a>
     </nav>
-    <div class="display-items">Cart</div>
+
+    <!-- End Navbar -->
+    <!--  -->
+    <div class="cart-container">
+      <!-- Cart Items -->
+      <div class="cart-items">
+        <h2>Shopping Cart</h2>
+        <div class="store-section">
+          <h3>Store 1</h3>
+          <ul>
+            <li>Item 1 - $10.00</li>
+            <li>Item 2 - $15.00</li>
+          </ul>
+        </div>
+        <div class="store-section">
+          <h3>Store 2</h3>
+          <ul>
+            <li>Item A - $8.00</li>
+            <li>Item B - $12.50</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Cart Total -->
+      <div class="cart-total">
+        <h2>Total</h2>
+        <p>Subtotal: $45.50</p>
+        <p>Tax: $3.64</p>
+        <hr />
+        <p>Final Total: $49.14</p>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+    <!--  -->
   </body>
 </html>
