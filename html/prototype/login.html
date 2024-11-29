@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +9,13 @@
 
   <body>
     <nav class="navbar">
-      <a href="prototype.html">
-        <img src="/images/icon_light.png" alt="" />
+      <a href="prototype.html" class="logo">
+        <img src="/images/icon_light.png" alt="Logo" />
       </a>
-      <a href="">Stores</a>
+      <a href="" class="nav-link">Stores</a>
+      <input type="text" class="search-bar" placeholder="Search..." />
+      <a href="cart.html" class="nav-link">Cart</a>
+      <a href="login_user.html" style="">Logout</a>
     </nav>
 
     <div class="login">
@@ -23,11 +25,23 @@
       <form action="prototype.html" method="POST">
         <div>
           <label class="login-label" for="username">Username</label>
-          <input class="login-input" type="text" id="username" name="username" required />
+          <input
+            class="login-input"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
         </div>
         <div>
           <label class="login-label" for="password">Password</label>
-          <input class="login-input" type="password" id="password" name="password" required />
+          <input
+            class="login-input"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
         </div>
         <div>
           <button class="submit" type="submit">Login</button>
