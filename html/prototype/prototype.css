@@ -1,12 +1,10 @@
 html,
 body {
   height: 100%;
-}
-
-body {
   background-color: rgb(11, 71, 64);
   margin: 0;
   padding: 0;
+  font-family: Gadugi, sans-serif;
 }
 
 /* NAV */
@@ -17,13 +15,25 @@ nav {
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  justify-content: center;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: white;
+  background: #0d6c65;
+}
+
 nav .logo {
-  margin-left: 40px; /* Increased spacing between logo and "Stores" */
+    margin-left: 40px; /* Increased spacing between logo and "Stores" */
 }
 
 nav img {
@@ -71,7 +81,7 @@ nav .nav-link:last-of-type {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 80%;
+  width: 55%;
   margin: 50px auto;
   padding: 20px;
   border-radius: 15px;
@@ -91,11 +101,9 @@ nav .nav-link:last-of-type {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
-  width: 200px;
+  width: 240px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 3px 2px 2px rgba(224, 224, 224, 0.777);
-  border: none;
 }
 .product:hover {
   background-color: #f9f9fa; /* Gray-100 */
@@ -103,9 +111,13 @@ nav .nav-link:last-of-type {
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product div {
+    padding-inline: 20px;
 }
 
 .product h2 {
@@ -125,12 +137,12 @@ button {
   padding: 10px 16px;
   border-radius: 12px;
   box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.777);
-  border: none;
+  border: 3px solid #007bff;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #e3e3e5; /* Gray-100 */
+  background-color: #D4F5FF;
   cursor: pointer;
   box-shadow: none;
 }
@@ -209,6 +221,57 @@ hr {
 }
 
 /* END CART */
+
+.login {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login div {
+    margin: 20px 0;
+}
+
+.login button {
+    border: 3px solid #007bff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background: #D4F5FF;
+}
+
+.login .submit {
+    background-color: #007bff;
+    color: white;
+}
+
+.login .submit:hover {
+    background-color: #007bff;
+}
+
+.login .login-label {
+    color: black;
+    line-height: 40px;
+}
+
+.login .login-input {
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid #9F9F9F
+}
 
 /* FOOTER */
 footer {
