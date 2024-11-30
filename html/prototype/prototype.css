@@ -79,10 +79,11 @@ nav .nav-link:last-of-type {
   flex-direction: column;
   text-align: center;
   width: 85%;
-  margin: 50px auto;
-  padding: 20px;
-  /* border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  margin: 0 auto;
+}
+
+.store {
+    margin: 0 0 20px 0;
 }
 
 /* PRODUCT LIST */
@@ -133,8 +134,8 @@ button {
   font-weight: bold;
   padding: 10px 16px;
   border-radius: 12px;
-  box-shadow: 2px 2px 2px 0px rgba(184, 184, 184, 0.777);
-  border: 3px solid #007bff;
+  box-shadow: 2px 2px 2px 0 rgba(184, 184, 184, 0.777);
+  border: 3px solid rgba(11, 71, 64);
   transition: background-color 0.3s ease;
 }
 
@@ -256,7 +257,7 @@ hr {
 }
 
 .login button {
-  border: 3px solid #007bff;
+  border: 3px solid rgba(11, 71, 64);
   padding: 10px 15px;
   border-radius: 7px;
   cursor: pointer;
@@ -267,12 +268,12 @@ hr {
 }
 
 .login .submit {
-  background-color: #007bff;
+  background-color: rgba(11, 71, 64);
   color: white;
 }
 
 .login .submit:hover {
-  background-color: #007bff;
+  background-color: #0d6c65;
 }
 
 .login .login-label {
