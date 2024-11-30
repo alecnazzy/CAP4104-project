@@ -14,48 +14,125 @@
       <a href="/html/prototype/prototype.html" class="logo">
         <img src="/images/icon_light.png" alt="Logo" />
       </a>
-      <a href="" class="nav-link">Stores</a>
+
+      <!-- Store Filter Checkbox Menu -->
+      <div class="nav-link store-filter">
+        <img src="/images/icons/stores.png" alt="Stores" id="store-icon" />
+        <div id="store-checkbox-menu" class="checkbox-menu hidden">
+          <label><input type="checkbox" value="walmart" /> Walmart</label>
+          <label><input type="checkbox" value="publix" /> Publix</label>
+          <label
+            ><input type="checkbox" value="trader-joes" /> Trader Joe's</label
+          >
+          <label
+            ><input type="checkbox" value="whole-foods" /> Whole Foods</label
+          >
+          <label><input type="checkbox" value="aldi" /> Aldi</label>
+        </div>
+      </div>
+      <script>
+        document
+          .getElementById("store-icon")
+          .addEventListener("click", function () {
+            const menu = document.getElementById("store-checkbox-menu");
+            menu.classList.toggle("hidden");
+          });
+
+        // Optional: Close menu when clicking outside
+        document.addEventListener("click", function (event) {
+          const menu = document.getElementById("store-checkbox-menu");
+          const icon = document.getElementById("store-icon");
+          if (!icon.contains(event.target) && !menu.contains(event.target)) {
+            menu.classList.add("hidden");
+          }
+        });
+      </script>
+
       <input type="text" class="search-bar" placeholder="Search..." />
       <a href="/html/prototype/cart.html" class="nav-link">
-        Cart (<span id="cart-count">0</span>)
+        <img src="/images/icons/cart.png" alt="cart" />
+        <span id="cart-count">0</span>
       </a>
       <a href="/html/prototype/login_user.html">Logout</a>
     </nav>
     <!-- END NAVBAR -->
 
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="">All</option>
+        <option value="fruits-vegetables">Fruits & Vegetables</option>
+        <option value="dairy">Dairy</option>
+        <option value="meat-seafood">Meat & Seafood</option>
+        <option value="bakery">Bakery</option>
+        <option value="beverages">Beverages</option>
+        <option value="snacks">Snacks</option>
+        <option value="household">Household Supplies</option>
+      </select>
+
+      <label for="brand">Brand:</label>
+      <select id="brand">
+        <option value="">All</option>
+        <option value="generic">Store Brand</option>
+        <option value="organic">Organic</option>
+        <option value="local">Local Farms</option>
+        <option value="premium">Premium Brands</option>
+      </select>
+
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="">All</option>
+        <option value="fresh">Fresh</option>
+        <option value="frozen">Frozen</option>
+        <option value="packaged">Packaged</option>
+        <option value="prepared">Prepared Meals</option>
+      </select>
+
+      <label for="sale">Sale:</label>
+      <select id="sale">
+        <option value="">All</option>
+        <option value="on-sale">On Sale</option>
+        <option value="clearance">Clearance</option>
+        <option value="discounted">Discounted</option>
+      </select>
+    </div>
+
+    <!-- END FILTER -->
+
     <!-- CAROUSEL -->
     <div class="carousel-container">
       <div class="carousel">
         <div class="carousel-item active">
-          <img src="https://dummyimage.com/800x400/008dd4/fff" alt="Item 1">
+          <img src="https://dummyimage.com/800x400/008dd4/fff" alt="Item 1" />
           <h2>Featured Item 1</h2>
           <div class="carousel-caption">
             <p>Special offer on our premium products</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://dummyimage.com/800x400/d40094/fff" alt="Item 2">
+          <img src="https://dummyimage.com/800x400/d40094/fff" alt="Item 2" />
           <h2>Featured Item 2</h2>
           <div class="carousel-caption">
             <p>New arrivals just for you</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://dummyimage.com/800x400/d4ad00/fff" alt="Item 3">
+          <img src="https://dummyimage.com/800x400/d4ad00/fff" alt="Item 3" />
           <h2>Featured Item 3</h2>
           <div class="carousel-caption">
             <p>Discover our best sellers</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://dummyimage.com/800x400/00d451/fff" alt="Item 4">
+          <img src="https://dummyimage.com/800x400/00d451/fff" alt="Item 4" />
           <h2>Featured Item 4</h2>
           <div class="carousel-caption">
             <p>Limited time offers</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://dummyimage.com/800x400/0040d4/fff" alt="Item 5">
+          <img src="https://dummyimage.com/800x400/0040d4/fff" alt="Item 5" />
           <h2>Featured Item 5</h2>
           <div class="carousel-caption">
             <p>Exclusive deals just for you</p>
@@ -105,8 +182,33 @@
             <p>$12.50</p>
             <button class="add-to-cart-btn">Add to Cart</button>
           </article>
+          <article
+            class="product"
+            data-id="5"
+            data-name="Product E"
+            data-price="20.00"
+            data-store="Store 1"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product E" />
+            <h2>Product E</h2>
+            <p>$20.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+          <article
+            class="product"
+            data-id="6"
+            data-name="Product F"
+            data-price="25.00"
+            data-store="Store 1"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product F" />
+            <h2>Product F</h2>
+            <p>$25.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
         </div>
       </section>
+
       <!-- Store 2 -->
       <section class="store" data-store="Store 2">
         <h2>Store 2</h2>
@@ -133,6 +235,85 @@
             <img src="https://via.placeholder.com/150" alt="Product D" />
             <h2>Product D</h2>
             <p>$8.75</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+          <article
+            class="product"
+            data-id="7"
+            data-name="Product G"
+            data-price="18.00"
+            data-store="Store 2"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product G" />
+            <h2>Product G</h2>
+            <p>$18.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+          <article
+            class="product"
+            data-id="8"
+            data-name="Product H"
+            data-price="22.50"
+            data-store="Store 2"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product H" />
+            <h2>Product H</h2>
+            <p>$22.50</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Store 3 -->
+      <section class="store" data-store="Store 3">
+        <h2>Store 3</h2>
+        <div class="product-list">
+          <article
+            class="product"
+            data-id="9"
+            data-name="Product I"
+            data-price="13.50"
+            data-store="Store 3"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product I" />
+            <h2>Product I</h2>
+            <p>$13.50</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+          <article
+            class="product"
+            data-id="10"
+            data-name="Product J"
+            data-price="17.00"
+            data-store="Store 3"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product J" />
+            <h2>Product J</h2>
+            <p>$17.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+          <article
+            class="product"
+            data-id="11"
+            data-name="Product K"
+            data-price="14.25"
+            data-store="Store 3"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product K" />
+            <h2>Product K</h2>
+            <p>$14.25</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+          <article
+            class="product"
+            data-id="12"
+            data-name="Product L"
+            data-price="11.75"
+            data-store="Store 3"
+          >
+            <img src="https://via.placeholder.com/150" alt="Product L" />
+            <h2>Product L</h2>
+            <p>$11.75</p>
             <button class="add-to-cart-btn">Add to Cart</button>
           </article>
         </div>

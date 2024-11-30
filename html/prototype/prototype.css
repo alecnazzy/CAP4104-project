@@ -16,9 +16,9 @@ nav {
   width: 100%;
   height: 70px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
+  align-items: center; /* Align all items vertically */
+  justify-content: space-between; /* Distribute items evenly */
+  padding: 0 40px; /* Padding to keep space around nav content */
   box-sizing: border-box;
 }
 
@@ -27,6 +27,8 @@ nav a {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+  display: flex; /* Ensures inline-block elements are aligned */
+  align-items: center; /* Aligns content inside links vertically */
 }
 
 nav a:hover {
@@ -35,28 +37,30 @@ nav a:hover {
 }
 
 nav .logo {
-  margin-left: 40px; /* Increased spacing between logo and "Stores" */
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space after the logo */
 }
 
 nav img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 nav .nav-link {
   color: white;
   text-decoration: none;
-  margin: 0 40px;
+  margin: 0 20px; /* Equal space between links */
 }
 
 nav .search-bar {
-  flex: 2;
+  flex: 1; /* Take up available space */
   max-width: 700px;
   padding: 5px 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav .search-bar:focus {
@@ -65,10 +69,96 @@ nav .search-bar:focus {
 }
 
 nav .nav-link:last-of-type {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
+#cart-count {
+  font-size: inherit; /* Match the surrounding text */
+  line-height: inherit; /* Ensure consistent line height */
+  margin-left: 5px; /* Add slight spacing between text and the icon */
+  vertical-align: middle; /* Vertically align with text */
+}
+
+/* NAV STORE FILTER */
+.hidden {
+  display: none;
+}
+
+.store-filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.store-filter img {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-menu {
+  position: absolute;
+  top: 40px; /* Adjust based on navbar height */
+  left: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 50px;
+  z-index: 10; /* Ensures menu is above other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-menu label {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.checkbox-menu input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.checkbox-menu label:hover {
+  border-radius: 5px;
+}
+
+/* END NAV STORE FILTER */
+
 /* END NAVBAR */
+
+/* FILTER */
+.filter-bar {
+  background-color: rgb(245, 245, 245); /* Light background for contrast */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  gap: 15px; /* Space between filter options */
+  border-bottom: 1px solid #ddd; /* Optional border for separation */
+  text-align: center; /* Ensures text aligns in the center of dropdowns */
+}
+
+.filter-bar label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.filter-bar select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  text-align-last: center; /* Ensures dropdown text aligns centrally */
+}
+
+.filter-bar select:focus {
+  outline: none;
+  border-color: rgb(66, 237, 95);
+}
+
+/* END FILTER */
 
 /* DISPLAY-ITEMS */
 .display-items {
@@ -83,7 +173,7 @@ nav .nav-link:last-of-type {
 }
 
 .store {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 /* PRODUCT LIST */
@@ -222,6 +312,7 @@ hr {
   padding-top: 10px;
   text-align: left;
 }
+
 .remove-btn {
   all: unset;
   cursor: pointer;
@@ -233,6 +324,25 @@ hr {
   cursor: pointer;
   padding-left: 50px;
   color: red;
+}
+
+.cart-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Space between the image and text */
+}
+
+.cart-title img {
+  width: 50px;
+  height: 50px;
+}
+
+.cart-items,
+.cart-total {
+  margin-bottom: 20px; /* Add spacing between sections */
+  text-align: center; /* Ensure text aligns properly */
 }
 
 /* END CART */
