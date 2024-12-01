@@ -150,8 +150,8 @@ nav .nav-link:last-of-type {
 /* FILTER */
 .filter-bar {
   margin: 30px auto;
-  display: flex;
-  width: 40%;
+  padding: 15px 60px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -189,7 +189,7 @@ nav .nav-link:last-of-type {
 /* TIP */
 .carousel-tip {
   position: absolute; /* Positions the element relative to its closest positioned ancestor */
-  top: 25%; /* Positions the icon 25% from the top of its container */
+  top: 30%; /* Positions the icon 25% from the top of its container */
   right: 280px; /* Positions the icon 80px from the right edge of its container */
   transform: translateY(
     -50%
