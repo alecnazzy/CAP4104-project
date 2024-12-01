@@ -1,6 +1,6 @@
 :root {
-    --accent: #412A8B;
-    --accent_light: #D0C1FF;
+  --accent: #412a8b;
+  --accent_light: #d0c1ff;
 }
 
 html,
@@ -15,35 +15,34 @@ body {
 
 /* NAV */
 nav {
-    background-color: var(--accent);
-    font-size: large;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 40px;
-    box-sizing: border-box;
-    position: relative;
+  background-color: var(--accent);
+  font-size: large;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 /* Add zigzag edge using a pseudo-element */
 nav::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-image: linear-gradient(-22deg, transparent 50%, var(--accent) 53%),
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(-22deg, transparent 50%, var(--accent) 53%),
     linear-gradient(22deg, transparent 50%, var(--accent) 53%);
-    background-size: 40px 20px;
+  background-size: 40px 20px;
 }
 
 .filter-bar {
-    padding: 50px;
+  padding: 50px;
 }
-
 
 nav a {
   color: white;
@@ -153,12 +152,12 @@ nav .nav-link:last-of-type {
   padding: 10px 20px;
   margin: 30px auto;
   display: flex;
-  width: 40%;
+  width: 65%;
   justify-content: center;
   align-items: center;
   gap: 15px;
   border: 1px solid var(--accent);
-    border-radius: 20px;
+  border-radius: 20px;
   text-align: center;
 }
 
@@ -183,6 +182,72 @@ nav .nav-link:last-of-type {
 
 /* END FILTER */
 
+/* TIP */
+.carousel-tip {
+  position: absolute; /* Positions the element relative to its closest positioned ancestor */
+  top: 25%; /* Positions the icon 25% from the top of its container */
+  right: 280px; /* Positions the icon 80px from the right edge of its container */
+  transform: translateY(
+    -50%
+  ); /* Adjusts the element for perfect vertical alignment */
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+}
+.cart-tip {
+  position: absolute; /* Positions the element relative to its closest positioned ancestor */
+  top: 24.3%; /* Positions the icon 25% from the top of its container */
+  right: 725px; /* Positions the icon 80px from the right edge of its container */
+  transform: translateY(
+    -70%
+  ); /* Adjusts the element for perfect vertical alignment */
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.help-icon {
+  font-weight: bold;
+  color: rgb(185, 184, 184); /* Black color */
+  border: 1px solid rgb(185, 184, 184); /* Black border */
+  background-color: white;
+  border-radius: 50%; /* Makes the border circular */
+  padding: 4px; /* Adds space around the icon */
+  width: 5px; /* Set width and height to create a circle */
+  height: 5px; /* Set width and height to create a circle */
+  text-align: center; /* Centers the text */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the ? vertically and horizontally */
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  right: calc(100% - 260px); /* Positions the tooltip to the left of the icon */
+  top: 50%;
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-tip:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.cart-tip:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+/* END TIP */
+
 /* DISPLAY-ITEMS */
 .display-items {
   background-color: white;
@@ -196,11 +261,11 @@ nav .nav-link:last-of-type {
 }
 
 .display-items .store-icon {
-    width: 40px;
-    margin-left: -50px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    z-index: 10;
+  width: 40px;
+  margin-left: -50px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  z-index: 10;
 }
 
 .store {
@@ -351,7 +416,7 @@ hr {
   text-align: center;
   border: 3px solid var(--accent);
   border-radius: 10px;
-  color:black;
+  color: black;
 }
 .remove-btn:hover {
   border-color: darkred;

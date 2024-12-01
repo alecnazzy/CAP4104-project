@@ -16,15 +16,27 @@
 
       <!-- Store Filter Checkbox Menu -->
       <div class="nav-link store-filter">
-        <div style="display: flex; flex-direction: column; line-height: 0; margin-top: 12px" id="store-icon">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            line-height: 0;
+            margin-top: 12px;
+          "
+          id="store-icon"
+        >
           <img src="/images/icons/stores.png" alt="Stores" />
           <p style="margin-top: 15px">Stores</p>
         </div>
         <div id="store-checkbox-menu" class="checkbox-menu hidden">
           <label><input type="checkbox" value="walmart" /> Walmart</label>
           <label><input type="checkbox" value="publix" /> Publix</label>
-          <label><input type="checkbox" value="trader-joes" /> Trader Joe's</label>
-          <label><input type="checkbox" value="whole-foods" /> Whole Foods</label>
+          <label
+            ><input type="checkbox" value="trader-joes" /> Trader Joe's</label
+          >
+          <label
+            ><input type="checkbox" value="whole-foods" /> Whole Foods</label
+          >
           <label><input type="checkbox" value="aldi" /> Aldi</label>
         </div>
       </div>
@@ -32,9 +44,22 @@
 
       <input type="text" class="search-bar" placeholder="Search..." />
       <a href="/html/prototype/cart.html" class="nav-link">
-        <div style="display: flex; flex-direction: column; line-height: 0; margin-top: 12px">
-          <div style="display: flex; flex-direction: row; vertical-align: center; ">
-            <img src="/images/icons/cart.png" alt="cart" style="width: 30px; height: 30px"/>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            line-height: 0;
+            margin-top: 12px;
+          "
+        >
+          <div
+            style="display: flex; flex-direction: row; vertical-align: center"
+          >
+            <img
+              src="/images/icons/cart.png"
+              alt="cart"
+              style="width: 30px; height: 30px"
+            />
             <span id="cart-count" style="margin-top: 15px">0</span>
           </div>
           <p style="text-align: center; margin-top: 12px">Cart</p>
@@ -50,6 +75,12 @@
         <div class="cart-title">
           <img src="/images/icons/cart.png" alt="" />
           <h2>Shopping Cart</h2>
+          <div class="cart-tip">
+            <span class="help-icon">?</span>
+            <div class="tooltip">
+              Items from different stores will appear in the same cart.
+            </div>
+          </div>
         </div>
         <div id="cart-stores"></div>
       </div>
