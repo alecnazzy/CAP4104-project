@@ -150,16 +150,20 @@ nav .nav-link:last-of-type {
 
 /* FILTER */
 .filter-bar {
-  padding: 10px 20px;
   margin: 30px auto;
-  display: flex;
-  width: 40%;
+  padding: 15px 60px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   border: 1px solid var(--accent);
-    border-radius: 20px;
+  border-radius: 20px;
   text-align: center;
+}
+
+.filter-bar-container {
+    display: flex;
+    justify-content: center;
 }
 
 .filter-bar label {
