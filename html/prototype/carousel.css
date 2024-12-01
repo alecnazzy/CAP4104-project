@@ -40,7 +40,7 @@
     left: 0;
     right: 0;
     padding: 20px;
-    background: rgba(11, 71, 64, 0.8);
+    background: rgb(from var(--accent) r g b / 0.6);
     color: white;
     text-align: center;
 }
@@ -70,7 +70,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(11, 71, 64, 0.6);
+    background: rgb(from var(--accent) r g b / 0.6);
     color: white;
     border: none;
     padding: 15px;
@@ -84,7 +84,7 @@
 }
 
 .carousel-control:hover {
-    background: rgb(11, 71, 64);
+    background: var(--accent);
 }
 
 .carousel-control.prev {

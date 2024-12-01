@@ -1,0 +1,22 @@
+.cart-title img {
+  filter: brightness(0%);
+}
+
+.store-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+.store-list .item-description {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.store-list .remove-btn:hover {
+    padding-left: 20px;
+    font-weight: bold;
+}

@@ -17,41 +17,29 @@
 
       <!-- Store Filter Checkbox Menu -->
       <div class="nav-link store-filter">
-        <img src="/images/icons/stores.png" alt="Stores" id="store-icon" />
+        <div style="display: flex; flex-direction: column; line-height: 0; margin-top: 12px" id="store-icon">
+          <img src="/images/icons/stores.png" alt="Stores" />
+          <p style="margin-top: 15px">Stores</p>
+        </div>
         <div id="store-checkbox-menu" class="checkbox-menu hidden">
           <label><input type="checkbox" value="walmart" /> Walmart</label>
           <label><input type="checkbox" value="publix" /> Publix</label>
-          <label
-            ><input type="checkbox" value="trader-joes" /> Trader Joe's</label
-          >
-          <label
-            ><input type="checkbox" value="whole-foods" /> Whole Foods</label
-          >
+          <label><input type="checkbox" value="trader-joes" /> Trader Joe's</label>
+          <label><input type="checkbox" value="whole-foods" /> Whole Foods</label>
           <label><input type="checkbox" value="aldi" /> Aldi</label>
         </div>
       </div>
-      <script>
-        document
-          .getElementById("store-icon")
-          .addEventListener("click", function () {
-            const menu = document.getElementById("store-checkbox-menu");
-            menu.classList.toggle("hidden");
-          });
-
-        // Optional: Close menu when clicking outside
-        document.addEventListener("click", function (event) {
-          const menu = document.getElementById("store-checkbox-menu");
-          const icon = document.getElementById("store-icon");
-          if (!icon.contains(event.target) && !menu.contains(event.target)) {
-            menu.classList.add("hidden");
-          }
-        });
-      </script>
+      <script src="storePicker.js"></script>
 
       <input type="text" class="search-bar" placeholder="Search..." />
       <a href="/html/prototype/cart.html" class="nav-link">
-        <img src="/images/icons/cart.png" alt="cart" />
-        <span id="cart-count">0</span>
+        <div style="display: flex; flex-direction: column; line-height: 0; margin-top: 12px">
+          <div style="display: flex; flex-direction: row; vertical-align: center; ">
+            <img src="/images/icons/cart.png" alt="cart" style="width: 30px; height: 30px"/>
+            <span id="cart-count" style="margin-top: 15px">0</span>
+          </div>
+          <p style="text-align: center; margin-top: 12px">Cart</p>
+        </div>
       </a>
       <a href="/html/prototype/login_user.html">Logout</a>
     </nav>
