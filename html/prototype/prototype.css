@@ -200,7 +200,7 @@ nav .nav-link:last-of-type {
 }
 .cart-tip {
   position: absolute; /* Positions the element relative to its closest positioned ancestor */
-  top: 24.3%; /* Positions the icon 25% from the top of its container */
+  top: 24.9%; /* Positions the icon 25% from the top of its container */
   right: 725px; /* Positions the icon 80px from the right edge of its container */
   transform: translateY(
     -70%
