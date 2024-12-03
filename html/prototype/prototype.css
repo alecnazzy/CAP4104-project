@@ -469,23 +469,19 @@ hr {
 }
 
 .login button {
-  border: 3px solid rgba(11, 71, 64);
+  border: 3px solid var(--accent);
   padding: 10px 15px;
   border-radius: 7px;
   cursor: pointer;
 }
 
-.login button:hover {
-  background: #d4f5ff;
-}
-
 .login .submit {
-  background-color: rgba(11, 71, 64);
+  background-color: var(--accent);
   color: white;
 }
 
 .login .submit:hover {
-  background-color: #0d6c65;
+  background-color: #5f3dc4;
 }
 
 .login .login-label {
